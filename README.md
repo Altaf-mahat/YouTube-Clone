@@ -1,3 +1,6 @@
 # YouTube-Clone
 YouTube Clone
-![Uploading Screenshot 2025-11-11 161505.png…]()
+
+
+<img width="1868" height="901" alt="image" src="https://github.com/user-attachments/assets/1b6669cc-cf6a-4f0c-8675-9a172ac2569a" />
+
