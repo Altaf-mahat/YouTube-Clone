@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 👇 Thumbnail Style */
+      .video-box {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .video-box img.thumbnail {
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+      .video-box:hover img.thumbnail {
+        transform: scale(1.03);
+      }
+      .video-box iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside>
+        <div class="bars">
+          <img src="bar.png" alt="menu" style="height: 20px" />
+        </div>
+
+        <div class="side-icons">
+          <img src="home icon.png" alt="home" />
+          <p>Home</p>
+        </div>
+        <div class="side-icons">
+          <img src="Explore.png" alt="explore" />
+          <p>Explore</p>
+        </div>
+        <div class="side-icons">
+          <img src="Subscription.png" alt="subs" />
+          <p>Subscriptions</p>
+        </div>
+        <div class="side-icons">
+          <img src="Library.png" alt="library" />
+          <p>Library</p>
+        </div>
+      </aside>
+
+      <!-- Main Section -->
+      <div class="main-container">
+        <!-- Header -->
+        <header>
+          <nav>
+            <div class="logo">
+              <img src="Youtube logo.jpg" alt="YouTube" />
+            </div>
+
+            <div class="center-nav">
+              <div class="search">
+                <input type="text" placeholder="Search" />
+                <button>
+                  <img
+                    src="search icon.png"
+                    alt="search"
+                    style="height: 20px"
+                  />
+                </button>
+              </div>
+              <div class="mic">
+                <img src="mic.png" alt="mic" style="height: 20px" />
+              </div>
+            </div>
+
+            <div class="side-nav">
+              <i
+                ><img src="upload.png" alt="upload" style="height: 40px"
+              /></i>
+              <i
+                ><img src="dot grid.svg" alt="apps" style="height: 40px"
+              /></i>
+              <i
+                ><img
+                  src="bell notification.png"
+                  alt="bell"
+                  style="height: 40px"
+              /></i>
+              <i
+                ><img
+                  src="img.jpg"
+                  alt="user"
+                  style="height: 40px; border-radius: 40%; width: 40px"
+              /></i>
+            </div>
+          </nav>
+
+          <div class="tags">
+            <div class="tag dark">All</div>
+            <div class="tag light">Music</div>
+            <div class="tag light">Gaming</div>
+            <div class="tag light">Movies</div>
+            <div class="tag light">Live</div>
+            <div class="tag light">News</div>
+            <div class="tag light">CSS</div>
+            <div class="tag light">JavaScript</div>
+          </div>
+        </header>
+
+        <!-- Video Grid -->
+        <main>
+          <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="video-box" data-id="RUG8yFJKVco">
+                <img
+                  src="https://img.youtube.com/vi/RUG8yFJKVco/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>Chakra UI Complete Course Hindi</h3>
+                  <p class="channel-name">Do Some Coding</p>
+                  <div class="content-status">
+                    <p>1M views</p>
+                    <p>4 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+              <div class="video-box" data-id="WaGEyQzQ6r0">
+                <img
+                  src="https://img.youtube.com/vi/WaGEyQzQ6r0/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>Learning Frontend Development in 2025</h3>
+                  <p class="channel-name">Frontend Development</p>
+                  <div class="content-status">
+                    <p>10M views</p>
+                    <p>5 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+              <div class="video-box" data-id="Ad8_ACQbzVE">
+                <img
+                  src="https://img.youtube.com/vi/Ad8_ACQbzVE/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>STEVE JOBS: Stanford Speech In Hindi</h3>
+                  <p class="channel-name">Motivation Speech</p>
+                  <div class="content-status">
+                    <p>500k views</p>
+                    <p>9 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+              <div class="video-box" data-id="G9MwtTijbVo">
+                <img
+                  src="https://img.youtube.com/vi/G9MwtTijbVo/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>When I Speak English People Laugh at My English</h3>
+                  <p class="channel-name">Improve English Using Present</p>
+                  <div class="content-status">
+                    <p>1M views</p>
+                    <p>2 years ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+              <div class="video-box" data-id="ewwxbpJecx4">
+                <img
+                  src="https://img.youtube.com/vi/ewwxbpJecx4/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>
+                    Full Week Gym Workout Plan For Muscle Building & Fat Loss
+                  </h3>
+                  <p class="channel-name">
+                    One vs Two Body Part | Bodybuilding
+                  </p>
+                  <div class="content-status">
+                    <p>5k views</p>
+                    <p>15 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card">
+              <div class="video-box" data-id="Fa8JpMkz2HY">
+                <img
+                  src="https://img.youtube.com/vi/Fa8JpMkz2HY/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>How to upload project on Github |</h3>
+                  <p class="channel-name">Step By Step Tutorial</p>
+                  <div class="content-status">
+                    <p>103 views</p>
+                    <p>2 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+              <div class="video-box" data-id="P8YuWEkTeuE">
+                <img
+                  src="https://img.youtube.com/vi/P8YuWEkTeuE/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>
+                    Build and Deploy Ecommerce Website With HTML CSS JavaScript
+                  </h3>
+                  <p class="channel-name">Using HTML CSS JavaScript</p>
+                  <div class="content-status">
+                    <p>5k views</p>
+                    <p>10k days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card">
+              <div class="video-box" data-id="j_AM6MkGD-Q">
+                <img
+                  src="https://img.youtube.com/vi/j_AM6MkGD-Q/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>
+                    5 Steps to Improve Your Focus in 7 Days🔥 | Remember Anything
+                    you Read
+                  </h3>
+                  <p class="channel-name">Improve Your Focus</p>
+                  <div class="content-status">
+                    <p>251k views</p>
+                    <p>8 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="card">
+              <div class="video-box" data-id="b8n-wpvBjrw">
+                <img
+                  src="https://img.youtube.com/vi/b8n-wpvBjrw/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>Stop Wasting your Time! | The Scientific Way</h3>
+                  <p class="channel-name">Focus on your goal</p>
+                  <div class="content-status">
+                    <p>100M views</p>
+                    <p>1.5 years ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+              <div class="video-box" data-id="WDCGLmpRxtI">
+                <img
+                  src="https://img.youtube.com/vi/WDCGLmpRxtI/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>Build a YouTube Clone Using HTML & CSS</h3>
+                  <p class="channel-name">Web Dev Simplified</p>
+                  <div class="content-status">
+                    <p>7M views</p>
+                    <p>2 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="card">
+              <div class="video-box" data-id="3PHXvlpOkf4">
+                <img
+                  src="https://img.youtube.com/vi/3PHXvlpOkf4/hqdefault.jpg"
+                  class="thumbnail"
+                  alt="thumbnail"
+                />
+              </div>
+              <div class="avatar-content">
+                <div class="avatar"><img src="img.jpg" alt="avatar" /></div>
+                <div class="content">
+                  <h3>Build Modern Portfolio Website with HTML CSS JS</h3>
+                  <p class="channel-name">Codehal</p>
+                  <div class="content-status">
+                    <p>12M views</p>
+                    <p>3 years ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        
+        
+    
+
+    <script>
+      // 🎬 Click to play YouTube video (only one at a time)
+      const videoBoxes = document.querySelectorAll(".video-box");
+      let currentPlaying = null;
+
+      videoBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          const id = box.dataset.id;
+
+          // stop current
+          if (currentPlaying && currentPlaying !== box) {
+            const oldId = currentPlaying.dataset.id;
+            currentPlaying.innerHTML = `
+              <img src="https://img.youtube.com/vi/${oldId}/hqdefault.jpg" class="thumbnail" alt="thumbnail" />
+            `;
+          }
+
+          // play new
+          box.innerHTML = `
+            <iframe src="https://www.youtube.com/embed/${id}?autoplay=1"
+              frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+          `;
+
+          currentPlaying = box;
+        });
+      });
+    </script>
+    
+      </div>
+      
+    </div>
+    
+    <footer>
+          <p>Developed by <span>Altaf Mahat</span> ❤️</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
